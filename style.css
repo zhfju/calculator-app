@@ -39,33 +39,39 @@ body {
     gap: 10px;
 }
 
+/* 修改 button 的背景色 */
 button {
     padding: 20px;
     font-size: 1.2em;
     border: none;
-    background: #f0f0f0;
+    background: #e3f2fd;
+    /* 改為淺藍色 */
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 button:hover {
-    background: #e0e0e0;
+    background: #bbdefb;
+    /* hover時的顏色 */
+}
+
+/* 修改等號按鈕的顏色 */
+.equals {
+    background: #2196f3;
+    /* 改為藍色 */
+    color: white;
+    grid-row: span 2;
+}
+
+.equals:hover {
+    background: #1976d2;
 }
 
 button:active {
     transform: scale(0.95);
 }
 
-.equals {
-    background: #667eea;
-    color: white;
-    grid-row: span 2;
-}
-
-.equals:hover {
-    background: #5568d3;
-}
 
 .zero {
     grid-column: span 2;
